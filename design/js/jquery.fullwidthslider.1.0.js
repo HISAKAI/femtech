@@ -23,7 +23,8 @@
 			slideNavi:	".slideNavi",
 			nav:true,
 			mouseoverStop:true,
-			navMargin:0
+			navMargin:0,
+			speed:800
 		}
 		var config = $.extend(defaults, options);
 		
@@ -91,7 +92,7 @@
 					$slideBox.css({marginLeft:config.width*(-target-2.5)+windowWidth*0.5});
 					
 				}				
-				$slideBox.stop().animate({marginLeft:config.width*(-target-1.5)+windowWidth*0.5});
+				$slideBox.stop().animate({marginLeft:config.width*(-target-1.5)+windowWidth*0.5}, config.speed);
 
 				current = target;
 		
