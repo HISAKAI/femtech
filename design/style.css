@@ -75,7 +75,7 @@ Header
 .header_wrap{
 	width: 100%;
 	margin: auto;
-	background: #154c7d;
+	background: #d8e2ed;
 }
 
 .header{
@@ -86,7 +86,7 @@ Header
 .title{
 	float: left;
 	font-size: 36px;
-	color:#FFF;
+	color:#333;
 }
 a.contact{
 	float: right;
@@ -127,21 +127,103 @@ Menu
 }
 .menu a {
 	display: block;
-	font-size: 1.8em;
-	color: white;
+	font-size: 1.7em;
+	color: #444;
 	text-decoration: none;
 	padding: 3px 15px;
 }
 
+.menu a:hover {
+  padding-bottom: 1px;
+	border-bottom: 2px #7fd5e0 solid;
+}
+
+.menu a.active{
+	border-bottom: 2px #7fd5e0 solid;
+}
+
+.menu_bar{
+border-top: 2px solid #b2bec8;
+border-bottom: 1px solid #3d3d3d;
+background: -moz-linear-gradient(top,  #8f959b 0%, #798189 39%, #404c54 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8f959b), color-stop(39%,#798189), color-stop(100%,#404c54));
+background: -webkit-linear-gradient(top,  #8f959b 0%,#798189 39%,#404c54 100%);
+background: -o-linear-gradient(top,  #8f959b 0%,#798189 39%,#404c54 100%);
+background: -ms-linear-gradient(top,  #8f959b 0%,#798189 39%,#404c54 100%);
+background: linear-gradient(to bottom,  #8f959b 0%,#798189 39%,#404c54 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f959b', endColorstr='#404c54',GradientType=0 );
+}
+.menu_wrap{
+	width: 920px;
+	margin: auto;
+}
+.menu_wrap ul li{
+	float: left;
+}
+.menu_wrap ul li a{
+	display: block;
+	color: #FFF;
+	padding: 5px 40px;
+	text-decoration: none;
+	font-size: 1.5em;
+}
+.menu_wrap ul li a:hover{
+	color: #b6d7ff;
+}
+
+/*========================================
+Top picture
+==========================================*/
 .mainpicture_bg{
-	background: #333;
 	text-align: center;
 	width: 920px;
 	margin: auto;
-	padding: 15px 0;
 }
 .mainpicture_bg img{
 	margin: 0 auto;
 }
 
+/*========================================
+Contents
+==========================================*/
+.contents_wrap{
+	width: 920px;
+	margin: auto;
+	margin-top: 15px;
+	overflow: hidden;
+}
 
+.contents_left{
+	float: left;
+	width: 630px;
+	padding-right: 10px;
+}
+
+.contents_right{
+	float: left;
+	width: 268px;
+	padding: 5px;
+	background: #f6f6f6;
+	border: 1px solid #f1f1f1;
+}
+
+.right_bg{
+	background: #e7e7e7;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+h2{
+	font-size: 1.3em;
+	border-left: 8px solid #3a8ae0;
+	text-indent: 10px;
+	border-bottom: 2px solid #3a8ae0;
+	margin-top: 10px;
+}
+
+.osirase td{
+	padding: 5px;
+}
+.osirase-date{
+	color:#737373;
+}
