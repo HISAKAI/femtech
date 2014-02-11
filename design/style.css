@@ -15,7 +15,8 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
   font-weight: normal;
   font-style: normal; }
   
-.ion-email {
+.ion-email,
+.ion-chevron-right {
   display: inline-block;
   font-family: "Ionicons";
   speak: none;
@@ -30,6 +31,9 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
   
 .ion-email:before {
   content: "\f132"; }
+  
+.ion-chevron-right:before{
+	content: "\f125"; }
 
 html{
 	background: #FFF;
@@ -143,14 +147,14 @@ Menu
 }
 
 .menu_bar{
-border-top: 2px solid #b2bec8;
-border-bottom: 1px solid #3d3d3d;
+border-top: 2px solid #92c5ee;
+border-bottom: 1px solid #355479;
 background: -moz-linear-gradient(top,  #8f959b 0%, #798189 39%, #404c54 100%);
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8f959b), color-stop(39%,#798189), color-stop(100%,#404c54));
-background: -webkit-linear-gradient(top,  #8f959b 0%,#798189 39%,#404c54 100%);
+background: -webkit-linear-gradient(top, #75a9de 0%, #1961ae 100%);
 background: -o-linear-gradient(top,  #8f959b 0%,#798189 39%,#404c54 100%);
 background: -ms-linear-gradient(top,  #8f959b 0%,#798189 39%,#404c54 100%);
-background: linear-gradient(to bottom,  #8f959b 0%,#798189 39%,#404c54 100%);
+background: linear-gradient(top,  #8f959b 0%,#798189 39%,#404c54 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f959b', endColorstr='#404c54',GradientType=0 );
 }
 .menu_wrap{
@@ -207,6 +211,18 @@ Contents
 	border: 1px solid #f1f1f1;
 }
 
+.sub_menu{
+	float:left;
+	width: 240px;
+	margin-right: 20px;
+	border-top: 5px solid #4d87c4;
+}
+
+.main_contents{
+	float: left;
+	width: 660px;
+}
+
 .right_bg{
 	background: #e7e7e7;
 	border-radius: 5px;
@@ -227,3 +243,47 @@ h2{
 .osirase-date{
 	color:#737373;
 }
+
+/*========================================
+SubMenu
+==========================================*/
+.sub_menu ul li{
+	border-bottom: 1px solid #c6c6c6;
+}
+.sub_menu ul li a{
+	display: block;
+	padding: 15px 10px;
+	text-decoration: none;
+	color: #555;
+	font-size: 1.2em;
+}
+
+.sub_menu ul li a.active{
+	background: #6fb3ff;
+	color: #ffffff;
+}
+.sub_menu ul li a span{
+	float: left;
+}
+
+.sub_menu ul li a i{
+	float: right;
+	margin-top: 3px;
+}
+
+.sub_menu ul li a:hover{
+	background: #6fb3ff;
+	color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
