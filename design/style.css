@@ -215,7 +215,6 @@ Contents
 	float:left;
 	width: 240px;
 	margin-right: 20px;
-	border-top: 5px solid #4d87c4;
 }
 
 .main_contents{
@@ -275,9 +274,50 @@ h4{
 	color: #333;
 }
 
+.ceomessage img{
+	float: left;
+}
+
+.ceomessage div{
+	float: left;
+	text-align: center;
+	width: 500px;
+	line-height: 30px;
+}
+
+.ceomessage div p{
+	text-align: right;
+}
+
+.companyprofile tr th{
+	width: 150px;
+	font-weight: bold;
+	color:#5c5c5c;
+}
+
+.companyprofile tr th,
+.companyprofile tr td{
+	padding: 8px;
+}
+
+.companyproduct li{
+	margin:5px 0px;
+	list-style: disc;
+	margin-left: 40px;
+}
+
 /*========================================
 SubMenu
 ==========================================*/
+.sub_menu .pagetitle{
+	font-size: 1.7em;
+	background: #dce7f2;
+	padding: 5px 10px;
+}
+.sub_menu ul{
+	border-top: 5px solid #4d87c4;
+}
+
 .sub_menu ul li{
 	border-bottom: 1px solid #c6c6c6;
 }
