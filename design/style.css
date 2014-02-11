@@ -244,6 +244,37 @@ h2{
 	color:#737373;
 }
 
+h3{
+	font-size: 2em;
+	margin-bottom: 15px;
+	color: #4a9fff;
+	border-left: 5px solid #6fb3ff;
+	padding: none;
+	text-indent: 15px;
+}
+
+h4{
+	font-size: 1.2em;
+	border-bottom: 1px solid #81beff;
+	color: #555;
+	font-weight: bold;
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+
+.history b{
+	display: block;
+	font-weight: normal;
+	margin: 3px;
+	margin-left: 20px;
+	font-size: 1.2em;
+}
+
+.history p{
+	margin-left: 40px;
+	color: #333;
+}
+
 /*========================================
 SubMenu
 ==========================================*/
