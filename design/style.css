@@ -16,7 +16,9 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
   font-style: normal; }
   
 .ion-email,
-.ion-chevron-right {
+.ion-chevron-right,
+.ion-archive,
+.ion-earth {
   display: inline-block;
   font-family: "Ionicons";
   speak: none;
@@ -29,11 +31,10 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
   
-.ion-email:before {
-  content: "\f132"; }
-  
-.ion-chevron-right:before{
-	content: "\f125"; }
+.ion-email:before { content: "\f132"; }
+.ion-chevron-right:before{ content: "\f125"; }
+.ion-archive:before{ content: "\f102"; }
+.ion-earth:before{ content: "\f276";}
 
 html{
 	background: #FFF;
@@ -42,6 +43,15 @@ body{
 	color: #000;
 	font-size:12px;
 	font-family: verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+}
+html,body{
+	height: 100%;
+}
+.container{
+	position: relative;
+  height: auto !important;    
+  height: 100%;
+  min-height: 100%;
 }
 .fclear{
 	clear:both;
@@ -86,6 +96,13 @@ Header
 	width: 920px;
 	margin: auto;
 }
+.header_msg{
+	float: left;
+	font-size: 1.4em;
+	padding-top: 3px;
+	width: 750px;
+	text-align: right;
+}
 
 .title{
 	float: left;
@@ -100,6 +117,9 @@ a.contact{
 	background: #333;
 	padding: 3px 15px;
 	border-radius: 0px 0px 7px 7px;
+	*background: url("./img/contact_bg.png") no-repeat;
+	*padding-left: 42px;
+	*font-weght: bold;
 }
 a.contact:link,
 a.contact:visited{
@@ -135,6 +155,8 @@ Menu
 	color: #444;
 	text-decoration: none;
 	padding: 3px 15px;
+	*padding-top: 5px;
+	*font-weight: bold;
 }
 
 .menu a:hover {
@@ -149,14 +171,19 @@ Menu
 .menu_bar{
 border-top: 2px solid #92c5ee;
 border-bottom: 1px solid #355479;
-background: -moz-linear-gradient(top,  #8f959b 0%, #798189 39%, #404c54 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8f959b), color-stop(39%,#798189), color-stop(100%,#404c54));
+background: -moz-linear-gradient(top, #75a9de 0%, #1961ae 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#75a9de), color-stop(100%,#1961ae));
 background: -webkit-linear-gradient(top, #75a9de 0%, #1961ae 100%);
-background: -o-linear-gradient(top,  #8f959b 0%,#798189 39%,#404c54 100%);
-background: -ms-linear-gradient(top,  #8f959b 0%,#798189 39%,#404c54 100%);
-background: linear-gradient(top,  #8f959b 0%,#798189 39%,#404c54 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f959b', endColorstr='#404c54',GradientType=0 );
+background: -o-linear-gradient(top, #75a9de 0%, #1961ae 100%);
+background: -ms-linear-gradient(top, #75a9de 0%, #1961ae 100%);
+background: linear-gradient(top, #75a9de 0%, #1961ae 100%);
+-ms-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75a9de', endColorstr='#1961ae',GradientType=1 );
+*background: url("./img/menu_bg.gif") repeat-x;
 }
+* html .menu_bar{
+	background: url("./img/menu_bg.gif") repeat-x;
+}
+
 .menu_wrap{
 	width: 920px;
 	margin: auto;
@@ -195,6 +222,7 @@ Contents
 	margin: auto;
 	margin-top: 15px;
 	overflow: hidden;
+	padding-bottom: 40px;
 }
 
 .contents_left{
@@ -309,11 +337,19 @@ h4{
 /*========================================
 SubMenu
 ==========================================*/
-.sub_menu .pagetitle{
+.pagetitle{
 	font-size: 1.7em;
 	background: #dce7f2;
+}
+.pagetitle span{
+	display: block;
 	padding: 5px 10px;
 }
+.pagetitle p{
+	background: url("./img/pattern1.png") repeat;
+	height: 7px;
+}
+
 .sub_menu ul{
 	border-top: 5px solid #4d87c4;
 }
@@ -347,14 +383,74 @@ SubMenu
 	color: #ffffff;
 }
 
+/*========================================
+Footer
+==========================================*/
+.footer{
+	position: absolute;
+	bottom: 0px;
+	background: #333;
+	color: white;
+	padding: 5px 0;
+	margin-top: 30px;
+	width: 100%;
+}
 
+.copyright{
+	text-align: center;
+}
 
+/*========================================
+Product
+==========================================*/
+.product li{
+	float: left;
+	width: 170px;
+	margin: 0 25px 80px 25px;
+}
 
+.product img{
+	margin: 10px 0;
+	padding: 2px;
+	border: 1px solid #999;
+}
 
+.product p{
+	font-size: 1.2em;
+}
 
+.pdf{
+	background: #e71212;
+}
 
-
-
+.pdf span{
+	border-left: 1px solid #ff8080;
+}
+.html{
+	background: #078ded;
+}
+.html span{
+	border-left: 1px solid #7fbbff;
+}
+a.download {
+	color: white;
+	
+	padding: 3px 10px;
+	padding-left: 6px;
+	text-decoration: none;
+	border-radius: 4px;
+	margin: 0 5px;
+}
+a.download i{
+	font-size: 1.2em;
+	padding-right: 5px;
+}
+a.download span{
+	padding-left: 10px;
+}
+a.download:hover span{
+	
+}
 
 
 
