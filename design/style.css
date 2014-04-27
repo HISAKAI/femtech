@@ -105,9 +105,7 @@ Header
 }
 
 .title{
-	float: left;
-	font-size: 36px;
-	color:#333;
+	height: 85px;
 }
 a.contact{
 	float: right;
@@ -141,33 +139,6 @@ a.contact span{
 /*========================================
 Menu
 ==========================================*/
-.menu{
-	float: right;
-	margin: auto;
-	margin-top: 15px;
-}
-.menu ul li{
-	float: left;
-}
-.menu a {
-	display: block;
-	font-size: 1.7em;
-	color: #444;
-	text-decoration: none;
-	padding: 3px 15px;
-	*padding-top: 5px;
-	*font-weight: bold;
-}
-
-.menu a:hover {
-  padding-bottom: 1px;
-	border-bottom: 2px #7fd5e0 solid;
-}
-
-.menu a.active{
-	border-bottom: 2px #7fd5e0 solid;
-}
-
 .menu_bar{
 border-top: 2px solid #92c5ee;
 border-bottom: 1px solid #355479;
@@ -187,9 +158,17 @@ background: linear-gradient(top, #75a9de 0%, #1961ae 100%);
 .menu_wrap{
 	width: 920px;
 	margin: auto;
+	position: relative;
 }
 .menu_wrap ul li{
 	float: left;
+}
+.menu_wrap img.logo2{
+	position: absolute;
+	top: -2px;
+}
+.menu_wrap .logo_spacer{
+	width: 100px;
 }
 .menu_wrap ul li a{
 	display: block;
