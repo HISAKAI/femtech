@@ -394,10 +394,6 @@ Product
 	border: 1px solid #999;
 }
 
-.product p{
-	font-size: 1.2em;
-}
-
 .pdf{
 	background: #e71212;
 }
@@ -430,6 +426,30 @@ a.download span{
 a.download:hover span{
 	
 }
+.main_contents table{
+	width: 100%;
+	margin-left: 20px;
+}
+.main_contents p{
+	margin-left: 20px;
+}
+.main_contents table th{
+	font-weight: bold;
+	background: #8ab3de;
+	color: white;
+	font-size: 1.2em;
+	padding: 3px 5px;
+	border-bottom: 2px solid #747474;
+}
 
+.main_contents table td{
+	padding: 5px;
+}
+.main_contents table tr:nth-child(odd){
+	background: #ededed;
+}
 
-
+.product p{
+	font-size: 1.2em;
+	margin: 0;
+}
