@@ -307,7 +307,7 @@ h4{
 	padding: 8px;
 }
 
-.companyproduct li{
+.main_contents li{
 	margin:5px 0px;
 	list-style: disc;
 	margin-left: 40px;
@@ -386,6 +386,7 @@ Product
 	float: left;
 	width: 170px;
 	margin: 0 25px 80px 25px;
+	list-style: none;
 }
 
 .product img{
@@ -448,7 +449,6 @@ a.download:hover span{
 .main_contents table tr:nth-child(odd){
 	background: #ededed;
 }
-
 .product p{
 	font-size: 1.2em;
 	margin: 0;
