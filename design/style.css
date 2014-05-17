@@ -453,3 +453,9 @@ a.download:hover span{
 	font-size: 1.2em;
 	margin: 0;
 }
+
+.product_detail_image{
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+}
