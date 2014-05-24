@@ -194,6 +194,33 @@ Top picture
 }
 
 /*========================================
+Top page
+==========================================*/
+.product_link a{
+	display: block;
+	float: left;
+	margin: 15px 0;
+}
+.product_link a:hover img{
+	border: 1px solid #AAA;
+}
+.product_link img{
+	border: 1px solid #555;
+}
+.product_link a:nth-child(odd){
+	margin-right: 25px;
+}
+.contents_right p{
+	font-weight: bold;
+	margin-top: 15px;
+	font-size: 1.2em;
+}
+.contents_right img{
+	box-shadow: 0px 0px 7px 1px #838383;
+}
+
+
+/*========================================
 Contents
 ==========================================*/
 .contents_wrap{
@@ -212,8 +239,8 @@ Contents
 
 .contents_right{
 	float: left;
-	width: 268px;
-	padding: 5px;
+	width: 200px;
+	padding: 10px 39px;
 	background: #f6f6f6;
 	border: 1px solid #f1f1f1;
 }
@@ -458,4 +485,79 @@ a.download:hover span{
 	width: 100%;
 	text-align: center;
 	margin-top: 10px;
+}
+
+/*========================================
+Contact
+==========================================*/
+.contact_form{
+	display: block;
+	width: 506px;
+	margin: auto;
+}
+.contact_form fieldset{
+	width: 500px;
+	border: 1px solid #0e4bce;
+	padding: 15px;
+}
+.contact_form legend{
+	margin-left: 15px;
+	font-size: 2em;
+	color: #444;
+}
+.contact_form table{
+	width: 100%;
+	font-size: 1.3em;
+}
+.contact_form table th{
+	font-weight: bold;
+	width: 150px;
+}
+.contact_form table td,
+.contact_form table th{
+	padding: 10px 0;
+}
+.contact_form input[type="text"]{
+	width: 300px;
+}
+.contact_form input[type="submit"]{
+	display: block;
+	border: 1px solid #569ec7;
+	color: #FFF;
+	font-weight: bold;
+	padding: 10px;
+	width: 80px;
+	background: #7abcff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
+	border-radius: 5px;
+	margin: auto;
+	cursor:hand;
+}
+.contact_form input[type="submit"]:hover{
+	background: #c6e2ff; /* Old browsers */
+background: -moz-linear-gradient(top,  #c6e2ff 0%, #a5cef7 44%, #6daded 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c6e2ff), color-stop(44%,#a5cef7), color-stop(100%,#6daded)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #c6e2ff 0%,#a5cef7 44%,#6daded 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #c6e2ff 0%,#a5cef7 44%,#6daded 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #c6e2ff 0%,#a5cef7 44%,#6daded 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #c6e2ff 0%,#a5cef7 44%,#6daded 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6e2ff', endColorstr='#6daded',GradientType=0 ); /* IE6-9 */
+
+}
+.contact_form fieldset textarea{
+	width: 300px;
+	height: 130px;
+}
+
+.contact_message{
+	font-size: 1.5em;
+	color:#407830;
+	text-align: center;
+	margin-top: 30px;
 }
