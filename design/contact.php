@@ -1,6 +1,6 @@
 <?php
-	mb_language("Ja") ;
-	mb_internal_encoding("UTF-8") ;
+	mb_language("Ja");
+	mb_internal_encoding("UTF-8");
 	
 	//nullチェックとメール送信実行処理
 	if(isset($_POST["name"],$_POST["mail"],$_POST["inquiry"])){
