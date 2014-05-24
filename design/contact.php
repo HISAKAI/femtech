@@ -24,7 +24,7 @@
 		$mailto="info@femtech.co.jp";
 		$subject="【ホームページからの問い合わせ】氏名: $name e-mail: $mail";
 		$content="氏名: $name¥ne-mail: $mail¥n様からのお問い合わせがありました。¥n【内容】¥n$inquiry";
-		$mailfrom="From:" .mb_encode_mimeheader("ホームページからの問い合わせ自動送信") ."<info@femtech.co.jp>";
+		$mailfrom="From:" .mb_encode_mimeheader("ホームページからの問い合わせ自動送信") ."<hirotake1120@yahoo.co.jp>";
 		mb_send_mail($mailto,$subject,$content,$mailfrom);
 
 		//	リダイレクト処理
