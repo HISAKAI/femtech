@@ -29,7 +29,8 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
   text-rendering: auto;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale; 
+  display: none\9;}
   
 .ion-email:before { content: "\f132"; }
 .ion-chevron-right:before{ content: "\f125"; }
@@ -115,9 +116,11 @@ a.contact{
 	background: #333;
 	padding: 3px 15px;
 	border-radius: 0px 0px 7px 7px;
-	*background: url("./img/contact_bg.png") no-repeat;
-	*padding-left: 42px;
-	*font-weght: bold;
+	background:none\9;
+	background: url("./img/contact_bg.png") no-repeat\9;
+	padding-left: 42px\9;
+	font-weght: bold\9;
+	width: 101px\9;
 }
 a.contact:link,
 a.contact:visited{
@@ -149,10 +152,8 @@ background: -o-linear-gradient(top, #75a9de 0%, #1961ae 100%);
 background: -ms-linear-gradient(top, #75a9de 0%, #1961ae 100%);
 background: linear-gradient(top, #75a9de 0%, #1961ae 100%);
 -ms-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75a9de', endColorstr='#1961ae',GradientType=1 );
-*background: url("./img/menu_bg.gif") repeat-x;
-}
-* html .menu_bar{
-	background: url("./img/menu_bg.gif") repeat-x;
+background: url("./img/menu_bg.gif") repeat-x\9;
+font-weight: bold\9;
 }
 
 .menu_wrap{
@@ -200,6 +201,7 @@ Top page
 	display: block;
 	float: left;
 	margin: 15px 0;
+	margin: 15px 6px\9;
 }
 .product_link a:hover img{
 	border: 1px solid #AAA;
@@ -424,25 +426,33 @@ Product
 
 .pdf{
 	background: #e71212;
+	background: url("./img/pdf_icon.png") no-repeat\9;
+	width: 51px\9;
+	height: 15px\9;
 }
 
 .pdf span{
 	border-left: 1px solid #ff8080;
+	border-left: none\9;
 }
 .html{
 	background: #078ded;
+	background: url("./img/html_icon.png") no-repeat\9;
+	width: 61px\9;
+	height: 15px\9;
 }
 .html span{
 	border-left: 1px solid #7fbbff;
+	border-left: none\9;
 }
 a.download {
 	color: white;
-	
 	padding: 3px 10px;
 	padding-left: 6px;
 	text-decoration: none;
 	border-radius: 4px;
 	margin: 0 5px;
+	display: block\9;
 }
 a.download i{
 	font-size: 1.2em;
@@ -450,6 +460,7 @@ a.download i{
 }
 a.download span{
 	padding-left: 10px;
+	padding-left: 25px\9;
 }
 a.download:hover span{
 	
