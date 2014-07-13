@@ -299,7 +299,7 @@ h4{
 
 .history b{
 	display: block;
-	font-weight: normal;
+	font-weight: bold;
 	margin: 3px;
 	margin-left: 20px;
 	font-size: 1.2em;
@@ -307,6 +307,7 @@ h4{
 
 .history p{
 	margin-left: 40px;
+	padding-left: 40px;
 	color: #333;
 }
 
@@ -370,7 +371,7 @@ SubMenu
 	padding: 15px 10px;
 	text-decoration: none;
 	color: #555;
-	font-size: 1.2em;
+	font-size: 1.3em;
 }
 
 .sub_menu ul li a.active{
