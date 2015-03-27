@@ -573,3 +573,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6e2ff', end
 	text-align: center;
 	margin-top: 30px;
 }
+/*========================================
+LappingPolishing
+==========================================*/
+.toparea_productpics{
+	width: 920px;
+	height: 670px;	
+}
+
+.bottomarea_pdfdownload{
+	width: 920px;
+	height: 80px;
+}
+
