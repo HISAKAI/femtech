@@ -83,7 +83,7 @@ e-mail: ' . $mail . '
 	
 	<div class="footer">
 	
-		<div class="copyright">Copyright 2014(C) Femtech Corporation., Ltd. Allrights Reserved.</div>
+		<div class="copyright">Copyright 2016(C) Femtech Corporation., Ltd. Allrights Reserved.</div>
 	</div>
 </div>
 <script>
