@@ -538,7 +538,7 @@ Contact
 	color: #FFF;
 	font-weight: bold;
 	padding: 10px;
-	width: 80px;
+	width: 150px;
 	background: #7abcff; /* Old browsers */
 	background: -moz-linear-gradient(top,  #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
