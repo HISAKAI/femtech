@@ -55,6 +55,7 @@ if (!empty($_POST["name"]) && !empty($_POST["mail"]) && !empty($_POST["inquiry"]
 	$mail = $_POST["mail"];
 	$subtitle = $_POST["subtitle"];
 	$inquiry = $_POST["inquiry"];
+	$rcn = $_POST["rcn"];
 
 	//入力チェック
 	if (mb_strlen($name) >= 100) {
@@ -63,12 +64,14 @@ if (!empty($_POST["name"]) && !empty($_POST["mail"]) && !empty($_POST["inquiry"]
 		echo "メールアドレスは100文字以内で入力して下さい。/ Input E-mail in 100 Charactors.";
 	} else if (mb_strlen($inquiry) >= 4000) {
 		echo "問い合わせ内容は4000文字以内で入力して下さい。 / Input Inquiry in 4000 Charactors.";
+	} else if ($rcn != "lhmTis7ugD") {
+		//	送信完了メッセージ
+		echo "問い合わせ内容を送信できませんでした。/ Inquiry sent unsuccessfully.";
 	} else {
 
 		//メール送信実行
 		$mailto = "info@femtech.co.jp";
 		$mailto2 = "hisakai@femtech.co.jp";
-		$mailto3 = "hyakusoku@femtech.co.jp";
 		$subject = "【ホームページからの問い合わせ】会社名/部署名/氏名: " . $comname . '/' . $depname . '/' . $name;
 		$content = '会社名/部署名/氏名: ' . $comname . '/' . $depname . '/' . $name . '
 住所: ' . $address . '
@@ -82,7 +85,6 @@ E-mail: ' . $mail . '
 		$mailfrom = "From:" . mb_encode_mimeheader("ホームページからの問い合わせ自動送信") . "<info@femtech.co.jp>";
 		mb_send_mail($mailto, $subject, $content, $mailfrom);
 		mb_send_mail($mailto2, $subject, $content, $mailfrom);
-		mb_send_mail($mailto3, $subject, $content, $mailfrom);
 
 		//	送信完了メッセージ
 		echo "問い合わせ内容を送信しました。/ Inquiry sent successfully.";
