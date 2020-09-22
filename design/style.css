@@ -319,11 +319,17 @@ h4{
 	float: left;
 	text-align: center;
 	width: 500px;
+	height: 500px;
 	line-height: 30px;
 }
 
 .ceomessage div p{
 	text-align: right;
+}
+
+.ceomessage_sns {
+	width: 660px;
+	clear:both;
 }
 
 .companyprofile tr th{
