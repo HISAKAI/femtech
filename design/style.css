@@ -58,8 +58,8 @@ html,body{
 	clear:both;
 }
 
-a, a:link	{	color:#88DDFC;	text-decoration: underline;}
-a:visited	{	color: #00D9ED;	text-decoration: underline;}
+a, a:link	{	color:#000000;	text-decoration: underline;}
+a:visited	{	color: #000066;	text-decoration: underline;}
 a:hover	{	color:#00AFF4;	text-decoration: underline;}
 a:active	{	color: #42CCFF;	text-decoration: underline;}
 
@@ -274,6 +274,7 @@ h2{
 
 .osirase td{
 	padding: 5px;
+
 }
 .osirase-date{
 	color:#737373;
