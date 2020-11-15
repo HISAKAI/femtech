@@ -473,6 +473,10 @@ a.download span{
 a.download:hover span{
 	
 }
+.white_paper_list{
+	margin-bottom: 10px;
+}
+
 .main_contents table{
 	width: 100%;
 	margin-left: 20px;
